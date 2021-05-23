@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1621785360 source:c:\users\quynh\documents\code\atm\main.cpp
+	"1display.h"
+	"2account.h"
+	"3function.h"
+
+1621672168 source:c:\users\quynh\documents\code\atm\qatm_display.cpp
+	"qatm_display.h"
+
+1621672304 c:\users\quynh\documents\code\atm\qatm_display.h
+	<iostream>
+	<windows.h>
+	<fcntl.h>
+	<locale>
+	<codecvt>
+	<ctime>
+	<conio.h>
+	<iomanip>
+
+1621672517 c:\users\quynh\documents\code\atm\qatm_account.h
+	"qatm_display.h"
+	<fstream>
+
+1621672788 c:\users\quynh\documents\code\atm\qatm.h
+	"qatm_display.h"
+	"qatm_account.h"
+
+1621672523 source:c:\users\quynh\documents\code\atm\qatm_account.cpp
+	"qatm_account.h"
+
+1621672586 source:c:\users\quynh\documents\code\atm\qatm.cpp
+	"qatm_account.h"
+	"qatm.h"
+
+1621673841 source:c:\users\quynh\documents\code\atm\function.cpp
+	"function.h"
+
+1621673883 c:\users\quynh\documents\code\atm\function.h
+	"display.h"
+	"account.h"
+
+1621672304 c:\users\quynh\documents\code\atm\display.h
+	<iostream>
+	<windows.h>
+	<fcntl.h>
+	<locale>
+	<codecvt>
+	<ctime>
+	<conio.h>
+	<iomanip>
+
+1621673883 c:\users\quynh\documents\code\atm\account.h
+	"display.h"
+	<fstream>
+
+1621673807 source:c:\users\quynh\documents\code\atm\display.cpp
+	"display.h"
+
+1621674024 source:c:\users\quynh\documents\code\atm\account.cpp
+	"account.h"
+
+1621778951 source:c:\users\quynh\documents\code\atm\1display.cpp
+	"1display.h"
+
+1621766984 c:\users\quynh\documents\code\atm\1display.h
+	<iostream>
+	<windows.h>
+	<fcntl.h>
+	<locale>
+	<codecvt>
+	<ctime>
+	<conio.h>
+	<iomanip>
+
+1621759705 source:c:\users\quynh\documents\code\atm\2account.cpp
+	"2account.h"
+
+1621674183 c:\users\quynh\documents\code\atm\2account.h
+	"1display.h"
+	<fstream>
+
+1621785315 source:c:\users\quynh\documents\code\atm\3function.cpp
+	"3function.h"
+
+1621785244 c:\users\quynh\documents\code\atm\3function.h
+	"1display.h"
+	"2account.h"
+

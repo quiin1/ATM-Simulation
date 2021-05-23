@@ -1,0 +1,43 @@
+Số ID TK: 0
+Ngày giao dịch:                    23/5/2021 22:18:15
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +20000 VND
+Số dư TK:                                   20000 VND
+
+Số ID TK: 0
+Ngày giao dịch:                    23/5/2021 22:18:25
+Loại giao dịch:                              Rút tiền
+Số tiền giao dịch:                         -10000 VND
+Số dư TK:                                   10000 VND
+
+Số ID TK: 0
+Ngày giao dịch:                    23/5/2021 22:18:40
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                         -10000 VND
+Số dư TK:                                       0 VND
+Thông điệp:  hudfiihdasid
+
+Số ID TK: 0
+Ngày giao dịch:                    23/5/2021 22:30:28
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                        +200000 VND
+Số dư TK:                                  200000 VND
+
+Số ID TK: 0
+Ngày giao dịch:                    23/5/2021 22:32:38
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +40000 VND
+Số dư TK:                                  240000 VND
+
+Số ID TK: 0
+Ngày giao dịch:                     23/5/2021 23:4:28
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                        +100000 VND
+Số dư TK:                                  340000 VND
+
+Số ID TK: 0
+Ngày giao dịch:                     23/5/2021 23:7:58
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                  350000 VND
+

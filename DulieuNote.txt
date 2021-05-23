@@ -1,0 +1,13 @@
+num_people 		(1->num_people)
+
+STT = 0 => TK ảo ~ WRONG	ĐẶC BIỆT LƯU Ý: KHÔNG SỬA TÀI KHOẢN ẢO, STT & TÊN ADMIN
+
+STT 	(int)
+ID 	(string)	Tài khoản là xâu ký tự KHÔNG chứa dấu cách 
+Pass 	(string)	Mật khẩu là xâu ký tự KHÔNG chứa dấu cách
+Name	(string)	Tên là xâu ký tự có thể có dấu (tiếng việt) nếu sửa trực tiếp file,
+			nhập từ bàn phím thì KHÔNG dấu, và Tên CÓ THỂ chứa dấu cách
+Money	(long long)
+Status (1:Unlock, 0:Locked) biến unlock
+
+Số lượng các tờ tiền mệnh giá 10k,20k,50k,100k,200k,500k (VND) trong cây ATM
