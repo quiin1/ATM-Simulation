@@ -1,4 +1,4 @@
-#include "3function.h"
+#include "3feature.h"
 
 extern int xnow,ynow;
 extern int num_people;

@@ -36,8 +36,8 @@
 		<Unit filename="1display.h" />
 		<Unit filename="2account.cpp" />
 		<Unit filename="2account.h" />
-		<Unit filename="3function.cpp" />
-		<Unit filename="3function.h" />
+		<Unit filename="3feature.cpp" />
+		<Unit filename="3feature.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
