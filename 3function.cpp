@@ -45,7 +45,7 @@ Account checkAcc(string &id, string pass, bool &checkid, bool &check){
     return List[0];                     //ko dung id -> return WRONG per -> check=checkid==false         => ko tồn tại thẻ
 }
 
-void login(Account &client){
+bool login(Account &client){
     string id, idprev, pass;
     bool checkid, check, isturnback=false;
     int x=11,y=10; // vị trí cursor
@@ -56,13 +56,11 @@ void login(Account &client){
         textcolor(15);  // white
         cout << "ID:        "; x=11; y++;  cin_wchs2s_unhide(id,x,y, isturnback); //getline_ws2s(id); //cin_ws2s(id);
         if (isturnback){
-            Login_Signup_Exit(client);
-            return;
+            return false;
         }
         cout << "Mật khẩu:  "; x=11; y++;  cin_wchs2s_hide(pass,x,y, isturnback); //pos: 11 12
         if (isturnback){
-            Login_Signup_Exit(client);
-            return;
+            return false;
         }
 
         client = checkAcc(id,pass,checkid,check);
@@ -79,7 +77,7 @@ void login(Account &client){
                 textcolor(15);  // white
                 system("PAUSE");
             }
-            return;
+            return true;
         }
         else{
             textcolor(12);  // red
@@ -106,7 +104,7 @@ void login(Account &client){
                     UpdatetoList(client);                    // update to List
                     Update_List();                           // update List to file du lieu
                     system("PAUSE");
-                    return;
+                    return true;
 
                 }
             }
@@ -120,6 +118,7 @@ void login(Account &client){
         idprev = client.id;
     }
     while (c<=5);
+    return true;
 }
 
 // Sign up (Đăng ký)
@@ -135,12 +134,10 @@ void signup(Account &client){
         textcolor(15);  // white
         cout << "ID (không dấu, không chứa dấu cách):       "; x=45; y++;     cin_wchs2s_unhide(nacc.id,x,y,isturnback); //cin_ws2s(nacc.id);
         if (isturnback){
-            Login_Signup_Exit(client);
             return;
         }
         cout << "Mật khẩu (không dấu, không chứa dấu cách): "; x=45; y++;     cin_wchs2s_unhide(nacc.pass,x,y,isturnback); //cin_ws2s(nacc.pass);
         if (isturnback){
-            Login_Signup_Exit(client);
             return;
         }
 
@@ -168,6 +165,8 @@ void signup(Account &client){
     cout << "Đăng ký tài khoản thành công!\n\n"; y+=2;
     //cout << "Mời quý khách đăng nhập!\n";
     textcolor(15);  // white
+    system("PAUSE");
+    return;
 }
 
 // 1. Login Or Signup Or Exit:
@@ -201,18 +200,34 @@ void Login_Signup_Exit(Account &client){
     MoveCursorUpDownAndChoose(xnow, ynow, poschoice, text, 2, fn);
 
     // exit
-        if (fn==27){ //Backspace 8 || Esc 27 || Thoát ynow==8
-            pause(100);
-            thankyou();
-            exit(1);
-        }
+    if (fn==27){ //Backspace 8 || Esc 27 || Thoát ynow==8
+        system("CLS");
+        textcolor(14);  // yellow
+        cout <<   "================== <<>> QUỲNH's BANK <<>> ==================\n"; //length=60
+        cout <<   "|                                                          |\n";
+        cout <<   "|                                                          |\n";
+        cout <<   "|                                                          |\n";
+        cout <<   "|                     ♪♪♪ Tạm biệt  ♪♪♪                    |\n";
+        cout <<   "|                ☺ Chúc một ngày tốt lành ☺                |\n";
+        cout <<   "|                                                          |\n";
+        cout <<   "|                                                          |\n";
+        cout <<   "|                                                          |\n";
+        cout <<   "|                                                          |\n";
+        //cout <<   "|                             © Bản quyền thuộc về quynhnt |\n";
+        cout <<   "|                                   © Copyright by quynhnt |\n";
+        cout <<   "============================================================\n";
+        textcolor(15); // white
+        pause(700);
+        exit(1);
+
+
+    }
 
     // signup
     if (ynow==7){
         xnow=0; ynow=11;
         gotoxy(xnow,ynow);
         signup(client);
-        system("PAUSE");
         Login_Signup_Exit(client);
     }
 
@@ -221,10 +236,10 @@ void Login_Signup_Exit(Account &client){
     if (ynow==6){
         xnow=0; ynow=11;
         gotoxy(xnow,ynow);
-        login(client);
+        if (!login(client)){
+            Login_Signup_Exit(client);
+        }
     }
-
-
 }
 
 
@@ -411,7 +426,7 @@ void guitien(Account &client){
                 };
                 MoveCursorLeftRightAndChoose(x, y, poschoice, text, 6, fn);
                 if (fn==27){ //ESC==27; ENTER==13; BACKSPACE==8; OTHERS
-                    choice_table(client);
+                    //choice_table(client);
                     return;
                 }
                 switch (x){
@@ -440,7 +455,7 @@ void guitien(Account &client){
                     //wcin >> num;            y++;
                     cin_wchs2ll(num,25,y,isturnback); y++;
                     if (isturnback){
-                        choice_table(client);
+                        //choice_table(client);
                         return;
                     }
                     while (num<=0 || num>500){
@@ -451,7 +466,7 @@ void guitien(Account &client){
                         textcolor(10);  // green
                         cin_wchs2ll(num,16,y,isturnback); y++;//wcin >> num; y++;
                         if (isturnback){
-                            choice_table(client);
+                            //choice_table(client);
                             return;
                         }
                     }
@@ -495,8 +510,6 @@ void guitien(Account &client){
     textcolor(14);  // yellow
     cout << " VND.\n\n";
     textcolor(15);  // white
-
-
 }
 
 
@@ -573,7 +586,7 @@ void ruttien(Account &client){
     else
         cin_wchs2ll(sum,46,21+c+2, isturnback);
     if (isturnback){
-        choice_table(client);
+        //choice_table(client);
         return;
     }
 
@@ -690,7 +703,7 @@ void chuyenkhoan(Account &client){
 
     cin_wchs2s_unhide(_id,x,y,isturnback); //cin_ws2s(_id);
     if (isturnback){
-        choice_table(client);
+        //choice_table(client);
         return;
     }
 
@@ -753,23 +766,23 @@ void changePass(Account &client){
     else y=21;
     cout << "Nhập mật khẩu hiện tại:   ";   x=27;       cin_wchs2s_hide(opass,x,y,isturnback); //cin_ws2s(opass);
     if (isturnback){
-        choice_table(client);
+        //choice_table(client);
         return;
     }
-    cout << "Nhập mật khẩu mới:        ";   x=27; y++;  cin_wchs2s_hide(opass,x,y,isturnback); //cin_ws2s(npass1);
+    cout << "Nhập mật khẩu mới:        ";   x=27; y++;  cin_wchs2s_hide(npass1,x,y,isturnback); //cin_ws2s(npass1);
     if (isturnback){
-        choice_table(client);
+        //choice_table(client);
         return;
     }
-    cout << "Nhập lại mật khẩu mới:    ";   x=27; y++;  cin_wchs2s_hide(opass,x,y,isturnback); //cin_ws2s(npass2);
+    cout << "Nhập lại mật khẩu mới:    ";   x=27; y++;  cin_wchs2s_hide(npass2,x,y,isturnback); //cin_ws2s(npass2);
     if (isturnback){
-        choice_table(client);
+        //choice_table(client);
         return;
     }
 
     if (opass!=client.pass){
         textcolor(12);  // red
-        cout << "Mật khẩu hiện tại không chính xác!\n";
+        cout << opass << "\t" << client.pass << " Mật khẩu hiện tại không chính xác!\n";
         textcolor(15);  // white
         return;
     }
@@ -779,6 +792,13 @@ void changePass(Account &client){
         textcolor(15);  // white
         return;
     }
+    if (npass1=="" || npass1==opass){
+        textcolor(12);  // red
+        cout << "Mật khẩu mới không hợp lệ!\n";
+        textcolor(15);  // white
+        return;
+    }
+
     client.pass = npass1;
     UpdatetoList(client);                    // update client to List
     Update_List();                           // update List to file du lieu
@@ -892,23 +912,19 @@ void choice_table(Account &client){
                 case 11: chuyenkhoan(client); break;
                 case 12: changePass(client); break;
                 case 13:
-                    if (client.name!="ADMIN") ischoice=0;
+                    if (client.name!="ADMIN") return;
                     else Display_List();
                     break;
                 case 14:
                     if (client.name=="ADMIN") showsATMsmoney(); break;
                 case 15:
-                    if (client.name=="ADMIN") ischoice=0; break;
+                    if (client.name=="ADMIN") return; break;
                 }
-
-                if (ischoice!=0){
-                    system("PAUSE");
-                }
+                system("PAUSE");
                 system("CLS");
             }
 
-        } while (ischoice);
-    thankyou();
+        } while (true);
     textcolor(15); // white
 }
 

@@ -10,16 +10,18 @@ int main(){
     SetConsoleOutputCP(65001);
     SetWindowSize(62,40);
 
-    //set up du lieu
-    Set_List();
+    Set_List(); //set up du lieu
 
     while (true){
         Account client;
-        Login_Signup_Exit(client); // đăng nhập đăng ký, thoát thì cảm ơn + exit
+        Login_Signup_Exit(client);
 
         if (client.unlock){
             ynow=7;
             choice_table(client);
+
+            thankyou();
+            system("PAUSE");
         }
     }
 

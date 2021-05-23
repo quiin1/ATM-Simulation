@@ -10,13 +10,16 @@
 // Thanks
 void thankyou();
 
+
 // Log in
 Account checkAcc(string &id, string pass, bool &checkid, bool &check);
 
-void login(Account &client);
+bool login(Account &client);
+
 
 // Sign up (Đăng ký)
 void signup(Account &client);
+
 
 // 1. Login Or Signup Or Exit:
 void Login_Signup_Exit(Account &client);
@@ -35,6 +38,7 @@ void seeHistory(Account &client);
 
 void saveHistoryNoAccent(Account &client, string loaigd, long long &number, string mess="");
 
+
 // Chức năng Gửi tiền
 void guitien(Account &client);
 
@@ -47,6 +51,7 @@ void ruttien(Account &client);
 
 // Chức năng Chuyển khoản
 void chuyenkhoan(Account &client);
+
 
 // Chức năng Change Password
 void changePass(Account &client);

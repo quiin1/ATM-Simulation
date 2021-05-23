@@ -92,6 +92,7 @@ void Display_List(){
     for (int i=1; i<=num_people; i++){
         List[i].Display();
     }
+    system("PAUSE");
 }
 
 void UpdatetoList(Account &client){ /* Update Account client to List */
@@ -146,6 +147,7 @@ void showsATMsmoney(){ // dung bien global: int money[][2], long long ATMsmoney
     }
     textcolor(15); // white
     cout << endl;
+    system("PAUSE");
 }
 
 

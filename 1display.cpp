@@ -227,6 +227,8 @@ void cin_wchs2s_hide(string &converted_str, int &x, int&y, bool &isturnback){  /
         }
     }
 
+    //string_to_convert+='\0';
+
     //setup converter
     wstring_convert<convert_type, wchar_t> converter;
 

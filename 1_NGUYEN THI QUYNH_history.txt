@@ -1,7 +1,0 @@
-Số ID TK: 1
-Ngày giao dịch:                    23/5/2021 22:18:40
-Loại giao dịch:                     Nhận chuyển khoản
-Số tiền giao dịch:                         +10000 VND
-Số dư TK:                                   10000 VND
-Thông điệp:  hudfiihdasid
-
