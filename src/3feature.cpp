@@ -5,6 +5,7 @@ extern int num_people;
 extern int money[][2];
 extern long long ATMsmoney;
 extern Account List[maxsizeOfList+1]; // from 1 -> num_people
+bool isfirstgetline;
 
 // 1. Login Or Signup Or Exit
 // Thanks
@@ -54,7 +55,7 @@ bool login(Account &client){
     do{
         c++;
         textcolor(15);  // white
-        cout << "ID:        "; x=11; y++;  cin_wchs2s_unhide(id,x,y, isturnback); //getline_ws2s(id); //cin_ws2s(id);
+        cout << "ID:        "; x=11; y++;  cin_wchs2s_unhide(id,x,y, isturnback);
         if (isturnback){
             return false;
         }
@@ -151,7 +152,8 @@ void signup(Account &client){
 
     cout << "Nhập họ và tên:  ";
     //cin.ignore(); getline(cin,nacc.name);
-    wcin.ignore(); getline_ws2s(nacc.name); y++;
+    if (!isfirstgetline) wcin.ignore();
+    getline_ws2s(nacc.name, isfirstgetline); y++; isfirstgetline=false;
 
 
     nacc.money=0;
@@ -177,7 +179,7 @@ void Login_Signup_Exit(Account &client){
     cout <<   "================== <<>> QUỲNH's BANK <<>> ==================\n"; //length=60
     cout <<   "|                                                          |\n";
     cout <<   "|        Mời quý khách chọn Đăng nhập hoặc Đăng ký:        |\n";
-    cout <<   "|(Sử dụng các phím ↑ ↓ và phím Enter để chọn, Esc để thoát)|\n";
+    cout <<   "|(Sử dụng các phím ↑ ↓ ← → và Enter để chọn,  Esc để thoát)|\n";
     cout <<   "|                                                          |\n";
     cout <<   "|                                                          |\n";
     cout <<   "|    ♦ Đăng nhập                                           |\n";
@@ -409,7 +411,8 @@ void guitien(Account &client){
 
             // Chọn mệnh giá
                 textcolor(15);  // white
-                cout << "Chọn mệnh giá: \n(10,000; 20,000; 50,000; 100,000; 200,000; 500,000) VND\n"; y+=2;
+                cout << "Chọn mệnh giá: \n";// (Sử dụng ← → và Enter để chọn, Esc: quay lại): \n";
+                cout << "(10,000; 20,000; 50,000; 100,000; 200,000; 500,000) VND\n"; y+=2;
 
                 x=1;
                 int poschoice[][2] = {
@@ -498,8 +501,15 @@ void guitien(Account &client){
         textcolor(14);  // yellow
         //cout << "Do you want to continue? [Y/N]:  ";
         cout << "Bạn có muốn tiếp tục nạp không? [Y/N]:  ";
-        wcin >> done;
-        cout << endl;       y++;
+        //wcin >> done; cout << endl;       y++;
+        done = getch(); y++;
+        if (done==27){ //ESC
+            return;
+        }
+        else{
+            cout << (char) done << endl;
+        }
+
     }
     while (toupper(done)=='Y');
 
@@ -728,7 +738,8 @@ void chuyenkhoan(Account &client){
                 cout << "\nNội dung thông điệp (ấn phím Enter để gửi): \n";
                 //cout << setw(8) << " " ;
                 textcolor(11); // cyan
-                wcin.ignore(); getline_ws2s(mess);
+                wcin.ignore();
+                wcin.ignore(); getline_ws2s(mess, isfirstgetline); isfirstgetline=false;
                 textcolor(15); // white
                 cout << endl;
 
@@ -761,7 +772,7 @@ void changePass(Account &client){
     textcolor(14);  // yellow
     cout << "          ĐỔI MẬT KHẨU ĐĂNG NHẬP - CHANGE PASSWORD          \n";
     textcolor(15);  // white
-    cout << setw(53) << "Mật khẩu là một xâu ký tự không chứa dấu cách, \ntiếng Việt không dấu.\n";
+    cout << setw(53) << "Mật khẩu là một xâu ký tự tiếng Việt không dấu.\n\n";
     if (client.name=="ADMIN") y=23;
     else y=21;
     cout << "Nhập mật khẩu hiện tại:   ";   x=27;       cin_wchs2s_hide(opass,x,y,isturnback); //cin_ws2s(opass);

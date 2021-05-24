@@ -167,10 +167,11 @@ void cin_ws2s(string &converted_str){
     //cout << " ID: " << converted_str << endl;                     //test
 }
 
-void getline_ws2s(string &converted_str){
+void getline_ws2s(string &converted_str, bool &isfirstgetline){
     wstring string_to_convert;
-    wcin.ignore();
+
     getline(wcin,string_to_convert);
+    isfirstgetline=false;
 
     //setup converter
     wstring_convert<convert_type, wchar_t> converter;

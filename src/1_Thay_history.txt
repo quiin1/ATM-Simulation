@@ -1,0 +1,112 @@
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 11:39:20
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                20410000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 11:51:32
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +40000 VND
+Số dư TK:                                20450000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 11:55:59
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +40000 VND
+Số dư TK:                                20490000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 11:57:33
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                        -600000 VND
+Số dư TK:                                19890000 VND
+Thông điệp:  Rút tiền đi ăn sáng
+
+Số ID TK: 1
+Ngày giao dịch:                     24/5/2021 12:7:18
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +40000 VND
+Số dư TK:                                19930000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 12:19:57
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                19940000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                     24/5/2021 12:20:4
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                19950000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 12:48:52
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                19960000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                     24/5/2021 12:50:8
+Loại giao dịch:                              Rút tiền
+Số tiền giao dịch:                        -600000 VND
+Số dư TK:                                19360000 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 12:51:13
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                        -100000 VND
+Số dư TK:                                19260000 VND
+Thông điệp:  dftf
+
+Số ID TK: 1
+Ngày giao dịch:                     24/5/2021 13:23:9
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                           +100 VND
+Số dư TK:                                19260100 VND
+
+Số ID TK: 1
+Ngày giao dịch:                     24/5/2021 13:34:3
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                19270100 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 13:34:38
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                        -200000 VND
+Số dư TK:                                19070100 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 13:35:40
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                19080100 VND
+Thông điệp:  abc
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 13:35:57
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                             +1 VND
+Số dư TK:                                19080101 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 13:39:53
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                             +1 VND
+Số dư TK:                                19080102 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 13:39:56
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                             +1 VND
+Số dư TK:                                19080103 VND
+
+Số ID TK: 1
+Ngày giao dịch:                    24/5/2021 13:41:13
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                         +20000 VND
+Số dư TK:                                19100103 VND
+Thông điệp:  123
+

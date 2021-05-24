@@ -62,7 +62,7 @@ void MoveCursorLeftRightAndChoose(int &poz_x, int &poz_y, int poschoice[][2], st
 // WCIN
 void cin_ws2s(string &converted_str);
 
-void getline_ws2s(string &converted_str);
+void getline_ws2s(string &converted_str, bool &isfirstgetline);
 
 bool isfnpress(int a, wchar_t &k); //-> cin_wchs2s (trả về ký tự k nếu ký tự nhập vào khác ký tự a, giống thì thực hiện chức năng)
 

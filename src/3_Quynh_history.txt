@@ -1,0 +1,70 @@
+Số ID TK: 3
+Ngày giao dịch:                     24/5/2021 12:21:0
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                   10000 VND
+
+Số ID TK: 3
+Ngày giao dịch:                    24/5/2021 12:21:16
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                   20000 VND
+
+Số ID TK: 3
+Ngày giao dịch:                     24/5/2021 12:22:5
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                   30000 VND
+
+Số ID TK: 3
+Ngày giao dịch:                    24/5/2021 12:22:29
+Loại giao dịch:                              Gửi tiền
+Số tiền giao dịch:                         +10000 VND
+Số dư TK:                                   40000 VND
+
+Số ID TK: 3
+Ngày giao dịch:                    24/5/2021 13:33:40
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                         -10000 VND
+Số dư TK:                                   30000 VND
+Thông điệp:  ABC
+
+Số ID TK: 3
+Ngày giao dịch:                     24/5/2021 13:34:3
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                         -10000 VND
+Số dư TK:                                   20000 VND
+
+Số ID TK: 3
+Ngày giao dịch:                    24/5/2021 13:34:38
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                        +200000 VND
+Số dư TK:                                  220000 VND
+
+Số ID TK: 3
+Ngày giao dịch:                    24/5/2021 13:35:40
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                         -10000 VND
+Số dư TK:                                  210000 VND
+Thông điệp:  abc
+
+Số ID TK: 3
+Ngày giao dịch:                    24/5/2021 13:35:57
+Loại giao dịch:                          Chuyển khoản
+Số tiền giao dịch:                             -1 VND
+Số dư TK:                                  209999 VND
+
+Số ID TK: 3
+Ngày giao dịch:                     24/5/2021 13:50:3
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                        +200000 VND
+Số dư TK:                                  409999 VND
+Thông điệp:  Cho bạn mua bim bim ăn
+
+Số ID TK: 3
+Ngày giao dịch:                     24/5/2021 14:2:46
+Loại giao dịch:                     Nhận chuyển khoản
+Số tiền giao dịch:                        +200000 VND
+Số dư TK:                                  609999 VND
+Thông điệp:  Cho Quỳnh mua kẹo
+

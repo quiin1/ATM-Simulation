@@ -3,6 +3,7 @@
 #include "3feature.h"
 
 extern int ynow;
+extern bool isfirstgetline;
 
 int main(){
     _setmode(_fileno(stdin), _O_U16TEXT);
@@ -11,6 +12,7 @@ int main(){
     SetWindowSize(62,40);
 
     Set_List(); //set up du lieu
+    isfirstgetline=true;
 
     while (true){
         Account client;
